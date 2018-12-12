@@ -3,7 +3,7 @@ library(xlsx)
 
 in_path <-'//faust/Abt4/FDZ/Drittmittelprojekte/Effizienzsteigerung_FDZ/Modul H/2_Maßnahmen/Issue_89/MDM_ifq_Update02102018/MDM/json/questions/ins1'
 
-out_path <- "//faust/Abt4/FDZ/Drittmittelprojekte/Effizienzsteigerung_FDZ/Modul H/2_Maßnahmen/Issue_89/MDM_ifq_Update02102018/MDM/json/scs2016_uh.xlsx"
+out_file <- "//faust/Abt4/FDZ/Drittmittelprojekte/Effizienzsteigerung_FDZ/Modul H/2_Maßnahmen/Issue_89/MDM_ifq_Update02102018/MDM/json/scs2016_uh.xlsx"
 files <- dir(in_path, pattern = "*.json")
 
 excel <- data.frame(matrix(ncol = 21, nrow = length(files)))
@@ -43,4 +43,4 @@ for (i in 1:length(files)) {
 
 # sort by indexInInstrument
 sorted_excel <- excel[order(excel$indexInInstrument),]
-write.xlsx(sorted_excel, file = out_path, sheetName = "questions", row.names = FALSE, showNA = FALSE)
+write.xlsx(sorted_excel, file = out_file, sheetName = "questions", row.names = FALSE, showNA = FALSE)
