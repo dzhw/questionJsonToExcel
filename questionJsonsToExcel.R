@@ -16,7 +16,7 @@ colnames(excel) <- col_names
 
 for (i in 1:length(files)) {
   json <- fromJSON(paste0(in_path,"/",files[[i]]))
-  
+
   excel$indexInInstrument[i] <- json$indexInInstrument
   excel$questionNumber[i] <- json$number
   excel$instrumentNumber[i] <- json$instrumentNumber
@@ -38,9 +38,9 @@ for (i in 1:length(files)) {
   excel$additionalQuestionText.en[i] <- ifelse(length(json$additionalQuestionText$en) == 0, NA_character_, json$additionalQuestionText$en)
   excel$annotations.de[i] <- ifelse(length(json$annotations$de) == 0, NA_character_, json$annotations$de)
   excel$annotations.en[i] <- ifelse(length(json$annotations$en) == 0, NA_character_, json$annotations$en)
-  
+
 }
 
 # sort by indexInInstrument
-sorted_excel <- excel[order(excel$indexInInstrument),] 
+sorted_excel <- excel[order(excel$indexInInstrument),]
 write.xlsx(sorted_excel, file = out_path, sheetName = "questions", row.names = FALSE, showNA = FALSE)
