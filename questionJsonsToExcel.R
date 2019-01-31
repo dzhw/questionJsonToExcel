@@ -1,17 +1,38 @@
 library(jsonlite)
-library(xlsx)
+library(readxl)
 
-in_path <-'//faust/Abt4/FDZ/Drittmittelprojekte/Effizienzsteigerung_FDZ/Modul H/2_Maßnahmen/Issue_89/MDM_ifq_Update02102018/MDM/json/questions/ins1'
+#Paths for windows
+#in_path <-'//faust/Abt4/FDZ/Drittmittelprojekte/Effizienzsteigerung_FDZ/Modul H/2_Maßnahmen/Issue_89/MDM_ifq_Update02102018/MDM/json/questions/ins1'
+#out_file <- "//faust/Abt4/FDZ/Drittmittelprojekte/Effizienzsteigerung_FDZ/Modul H/2_Maßnahmen/Issue_89/MDM_ifq_Update02102018/MDM/json/scs2016_uh.xlsx"
+in_path <- "/run/user/1002/gvfs/smb-share:server=faust,share=abt4/FDZ/8_nfrastruktur/Zofar-Export/2_Maßnahmen/Issue_89/MDM_ifq_Update02102018/MDM/json/questions/ins1$"
+out_file <- "/run/user/1002/gvfs/smb-share:server=faust,share=abt4/FDZ/8_nfrastruktur/Zofar-Export/2_Maßnahmen/Issue_89/MDM_ifq_Update02102018/MDM/json/scs2016_robi.xlsx"
 
-out_file <- "//faust/Abt4/FDZ/Drittmittelprojekte/Effizienzsteigerung_FDZ/Modul H/2_Maßnahmen/Issue_89/MDM_ifq_Update02102018/MDM/json/scs2016_uh.xlsx"
 files <- dir(in_path, pattern = "*.json")
 
 excel <- data.frame(matrix(ncol = 21, nrow = length(files)))
-col_names <- c("indexInInstrument",	"questionNumber",	"instrumentNumber",	"successorNumbers",
-               "questionText.de",	"questionText.en",	"instruction.de",	"instruction.en",	"introduction.de",
-               "introduction.en",	"type.de",	"type.en",	"topic.de",	"topic.en",	"technicalRepresentation.type",
-               "technicalRepresentation.language",	"technicalRepresentation.source",	"additionalQuestionText.de",
-               "additionalQuestionText.en",	"annotations.de",	"annotations.en")
+
+col_names <- c("indexInInstrument",
+               "questionNumber",
+               "instrumentNumber",
+               "successorNumbers",
+               "questionText.de",
+               "questionText.en",
+               "instruction.de",
+               "instruction.en",
+               "introduction.de",
+               "introduction.en",
+               "type.de",
+               "type.en",
+               "topic.de",
+               "topic.en",
+               "technicalRepresentation.type",
+               "technicalRepresentation.language",
+               "technicalRepresentation.source",
+               "additionalQuestionText.de",
+               "additionalQuestionText.en",
+               "annotations.de",
+               "annotations.en")
+
 colnames(excel) <- col_names
 
 for (i in 1:length(files)) {
@@ -43,4 +64,4 @@ for (i in 1:length(files)) {
 
 # sort by indexInInstrument
 sorted_excel <- excel[order(excel$indexInInstrument),]
-write.xlsx(sorted_excel, file = out_file, sheetName = "questions", row.names = FALSE, showNA = FALSE)
+#write.xlsx(sorted_excel, file = out_file, sheetName = "questions", row.names = FALSE, showNA = FALSE)
