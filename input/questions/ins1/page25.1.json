@@ -12,7 +12,7 @@
     ],
     "additionalQuestionText":{
         "de":"Haben Sie seit Januar 2011 als Haupt- oder Mitantragsteller/Mitantragstellerin einen oder mehrere Drittmittelanträge bei einem öffentlichen oder privaten Förderer gestellt? Bitte berücksichtigen Sie nur Anträge mit einem jeweiligen Volumen von über 25.000 €.,Ja,Nein. Ich habe seit 2011 keine Drittmittelanträge über 25.000 € gestellt.",
-        "en":"Have you submitted one or more third-party funding applications to public or private funding sources as main or joint applicant since January 2011? Please only mention applications for over â¬ 25,000 each.,Yes,No, I have not submitted any applications for third-party funding for over € 25,000 since 2011."
+        "en":"Have you submitted one or more third-party funding applications to public or private funding sources as main or joint applicant since January 2011? Please only mention applications for over 25,000 each.,Yes,No, I have not submitted any applications for third-party funding for over € 25,000 since 2011."
     },
     "type":{
         "de":"Einfachnennung",
@@ -20,7 +20,7 @@
     },
     "questionText":{
         "de":"Haben Sie seit Januar 2011 als Haupt- oder Mitantragsteller/Mitantragstellerin einen oder mehrere Drittmittelanträge bei einem öffentlichen oder privaten Förderer gestellt? Bitte berücksichtigen Sie nur Anträge mit einem jeweiligen Volumen von über 25.000 €.",
-        "en":"Have you submitted one or more third-party funding applications to public or private funding sources as main or joint applicant since January 2011? Please only mention applications for over â¬ 25,000 each."
+        "en":"Have you submitted one or more third-party funding applications to public or private funding sources as main or joint applicant since January 2011? Please only mention applications for over 25,000 each."
     },
     "instrumentNumber":"1",
     "dataAcquisitionProjectId":"meisner1",
