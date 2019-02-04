@@ -14,7 +14,7 @@
     ],
     "additionalQuestionText":{
         "de":"Bitte geben Sie an, wie häufig Sie mögliche Mittelgeber/Förderorganisationen in den ‚Acknowledgments‘ aufführen. Bei Publikationen in Fachzeitschriften gebe ich…,…immer die beteiligten Förderer an.,…meistens die beteiligten Förderer an.,…selten die beteiligten Förderer an.,…nie die beteiligten Förderer an,Trifft nicht zu",
-        "en":"Please state how often you mention possible funding providers/funding organisations in the acknowledgments. In publications in specialist journals I â¦,...always mention the funding sources involved.,...usually mention the funding sources involved.,...rarely mention the funding sources involved.,...never mention the funding sources involved.,Not applicable"
+        "en":"Please state how often you mention possible funding providers/funding organisations in the acknowledgments. In publications in specialist journals I ,...always mention the funding sources involved.,...usually mention the funding sources involved.,...rarely mention the funding sources involved.,...never mention the funding sources involved.,Not applicable"
     },
     "type":{
         "de":"Einfachnennung",
@@ -22,7 +22,7 @@
     },
     "questionText":{
         "de":"Bitte geben Sie an, wie häufig Sie mögliche Mittelgeber/Förderorganisationen in den ‚Acknowledgments‘ aufführen. Bei Publikationen in Fachzeitschriften gebe ich…",
-        "en":"Please state how often you mention possible funding providers/funding organisations in the acknowledgments. In publications in specialist journals I â¦"
+        "en":"Please state how often you mention possible funding providers/funding organisations in the acknowledgments. In publications in specialist journals I 
     },
     "instrumentNumber":"1",
     "dataAcquisitionProjectId":"meisner1",
