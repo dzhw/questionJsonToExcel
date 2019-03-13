@@ -1,13 +1,13 @@
-in_path <- here::here("input/questions/ins1")
-out_file <- here::here("output/scs2016_robi.xlsx")
+in_path <- here::here("input/pages/ins3")
+out_file <- here::here("output/gra2005_3.xlsx")
 
 files <- dir(in_path, pattern = "*.json")
 
 excel <- data.frame(matrix(ncol = 21, nrow = length(files)))
 
 col_names <- c("indexInInstrument",
-  "questionNumber",
-  "instrumentNumber",
+ # "questionNumber",
+ # "instrumentNumber",
   "successorNumbers",
   "questionText.de",
   "questionText.en",
@@ -33,8 +33,8 @@ for (i in 1:length(files)) {
   json <- jsonlite::fromJSON(paste0(in_path, "/", files[[i]]))
 
   excel$indexInInstrument[i] <- json$indexInInstrument
-  excel$questionNumber[i] <- json$number
-  excel$instrumentNumber[i] <- json$instrumentNumber
+#  excel$questionNumber[i] <- json$number
+#  excel$instrumentNumber[i] <- json$instrumentNumber
   excel$successorNumbers[i] <- ifelse(length(json$successorNumbers) == 0,
     NA_character_, paste0(json$successorNumbers, collapse = ","))
   excel$questionText.de[i] <- ifelse(length(json$questionText$de) == 0,
