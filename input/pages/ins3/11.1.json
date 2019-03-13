@@ -1,0 +1,36 @@
+
+{
+    "id":"que-gra2005-ins3-11.1$",
+    "indexInInstrument":13,
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:page uid=\"page11\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:body uid=\"b\">\n        <zofar:section uid=\"s\">\n            <zofar:header>\n                <zofar:title block=\"true\" uid=\"t\">STAND DER ERWERBSTÄTIGKEIT</zofar:title>\n            </zofar:header>\n        </zofar:section>\n        <zofar:questionSingleChoice uid=\"sc\">\n            <zofar:header>\n                <zofar:question block=\"true\" uid=\"q\">Waren Sie nach Ihrem\n\t\t\t\t\t\t(ersten) Studienabschluss schon einmal in irgendeiner Form\n\t\t\t\t\t\terwerbstätig?</zofar:question>\n                <zofar:instruction block=\"true\" uid=\"ins\">(Zur\n\t\t\t\t\t\tErwerbstätigkeit zählt auch Jobben, Promotionsstelle, Werk-/\n\t\t\t\t\t\tHonorarvertrag, Referendariat u. Ä.)</zofar:instruction>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"c3erwerbns\">\n                <zofar:answerOption label=\"Ja, und ich bin es gegenwärtig\" uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption label=\"Ja früher, aber zurzeit nicht\" uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption label=\"Nein\" uid=\"ao3\" value=\"3\"/>\n            </zofar:responseDomain>\n        </zofar:questionSingleChoice>\n        <zofar:section uid=\"sw\" visible=\"navigatorBean.isSame() or flag3.value\">\n            <zofar:header>\n                <zofar:text block=\"true\" uid=\"t\">#{layout.BREAK}#{layout.WARNING_START}Diese Frage ist für die\n\t\t\t\t\t\tWeiterführung im Fragebogen wichtig. Sollten Sie keine Angabe\n\t\t\t\t\t\tmachen, erhalten Sie eventuell Fragen, die möglicherweise nicht\n\t\t\t\t\t\tauf Ihre Situation passen.#{layout.WARNING_END}</zofar:text>\n            </zofar:header>\n            <zofar:body uid=\"bb\">\n                <zofar:multipleChoice uid=\"mc\">\n                    <zofar:header>\n                        <zofar:question uid=\"qm\"/>\n                    </zofar:header>\n                    <zofar:responseDomain uid=\"rd\">\n                        <zofar:answerOption label=\"Ja, ich möchte diese Frage überspringen.\" uid=\"ao1\" variable=\"flag3\"/>\n                    </zofar:responseDomain>\n                </zofar:multipleChoice>\n            </zofar:body>\n        </zofar:section>\n    </zofar:body>\n    <zofar:transitions>\n        <zofar:transition condition=\"c3erwerbns.value=='' and !flag3.value\" target=\"page11\"/>\n        <zofar:transition condition=\"c3erwerbns.value=='' and flag3.value \" target=\"page12\"/>\n        <zofar:transition condition=\"c3erwerbns.value==2\" target=\"page12\"/>\n        <zofar:transition condition=\"c3erwerbns.value==1\" target=\"page14a\"/>\n        <zofar:transition condition=\"c3erwerbns.value==3\" target=\"page25\"/>\n    </zofar:transitions>\n</zofar:page>"
+    },
+    "additionalQuestionText":{
+        "de":"STAND DER ERWERBSTÄTIGKEIT,Waren Sie nach Ihrem (ersten) Studienabschluss schon einmal in irgendeiner Form erwerbstätig?,(Zur Erwerbstätigkeit zählt auch Jobben, Promotionsstelle, Werk-/ Honorarvertrag, Referendariat u. Ä.),Ja, und ich bin es gegenwärtig,Ja früher, aber zurzeit nicht,Nein,Diese Frage ist für die Weiterführung im Fragebogen wichtig. Sollten Sie keine Angabe machen, erhalten Sie eventuell Fragen, die möglicherweise nicht auf Ihre Situation passen.,Ja, ich möchte diese Frage überspringen."
+    },
+    "type":{
+        "de":"Itembatterie",
+        "en":"Item Set"
+    },
+    "questionText":{
+        "de":"Waren Sie nach Ihrem (ersten) Studienabschluss schon einmal in irgendeiner Form erwerbstätig?",
+        "en":""
+    },
+    "instruction":{
+        "de":"(Zur Erwerbstätigkeit zählt auch Jobben, Promotionsstelle, Werk-/ Honorarvertrag, Referendariat u. Ä.)"
+    },
+    "dataAcquisitionProjectId":[
+        "gra2005"
+    ],
+    "studyId":[
+        "5,9"
+    ],
+    "annotations":{
+    },
+    "successorNumbers":[
+        "12.1",
+        "25.1"
+    ]
+}

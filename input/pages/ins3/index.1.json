@@ -1,0 +1,32 @@
+
+{
+    "id":"que-gra2005-ins3-index.1$",
+    "indexInInstrument":1,
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:page uid=\"index\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:body uid=\"b\">\n        <zofar:section uid=\"sc1\">\n            <zofar:header>\n                <zofar:title block=\"true\" uid=\"t1\">#{layout.BREAK}\n\t\t\t\tDritte Befragung der Hochschulabsolventinnen und Hochschulabsolventen des Jahrgangs 2004/2005\n\t\t\t\t\t#{layout.BREAK}#{layout.BREAK}</zofar:title>\n                <zofar:text block=\"true\" uid=\"t2\">#{layout.BOLD_START}\n\t\t\t\t\tSehr geehrte Absolventin, sehr\n\t\t\t\t\tgeehrter Absolvent,#{layout.BOLD_END}\n\t\t\t\t\t#{layout.BREAK}#{layout.BREAK}\n\t\t\t\t\t\n\t\t\t\t\twir freuen uns, dass Sie an der dritten Befragung des\n\t\t\t\t\tAbsolventenjahrgangs 2004/2005 teilnehmen.\n\t\t\t\t\t\n\t\t\t\t\t#{layout.BREAK}#{layout.BREAK}\n\t\t\t\t\t\n\t\t\t\t\tDer Fragebogen gliedert sich in verschiedene thematische Abschnitte zu Ihrem Werdegang nach Ihrem Studium. Bitte beantworten Sie nach Möglichkeit jede Frage. Ihre Antwort geben Sie durch Auswählen des jeweiligen Kästchens. Bei Besonderheiten zur Beantwortung einer Frage oder mehreren möglichen Antworten werden Sie jeweils darauf hingewiesen. Die Beantwortung des Fragebogens nimmt je nach persönlicher Lebenssituation zwischen 5 und 15 Minuten in Anspruch. Sie können jederzeit im Fragebogen pausieren und die Beantwortung zu einem späteren Zeitpunkt fortsetzen.\n\t\t\t\t\t\n\t\t\t\t\t#{layout.BREAK}#{layout.BREAK}\n\t\t\t\t\t#{layout.BOLD_START}\n\t\t\t\t\tEinverständnis\n\t\t\t\t\t#{layout.BOLD_END}\n\t\t\t\t\t#{layout.BREAK}\n\t\t\t\t\tSelbstverständlich ist Ihre Teilnahme freiwillig. Alle Angaben aus den vorangegangenen und der aktuellen Befragungswelle werden ausschließlich zu Forschungszwecken genutzt. Sie werden anderen Wissenschaftler(inne)n und Studierenden für wissenschaftliche Analysen nur in anonymisierter Form zur Verfügung gestellt. Ihre Kontaktdaten werden nicht an Dritte weitergegeben und nur im Rahmen dieser Untersuchungsreihe verwendet.</zofar:text>\n            </zofar:header>\n        </zofar:section>\n        <zofar:multipleChoice uid=\"mc\">\n            <zofar:header>\n                <zofar:question uid=\"q1\"/>\n            </zofar:header>\n            <zofar:responseDomain uid=\"rd\">\n                <zofar:answerOption label=\"Ich willige in die Teilnahme an der Befragung und die beschriebene Verwendung meiner Daten ein.\" uid=\"rd\" variable=\"privacy\"/>\n            </zofar:responseDomain>\n        </zofar:multipleChoice>\n        <zofar:section uid=\"sc2\">\n            <zofar:header>\n                <zofar:text uid=\"t1\">#{layout.BREAK}#{layout.BREAK}\n\t\t\t\t\tSollten Sie Fragen zum Datenschutz haben, können Sie sich an unseren\n\t\t\t\t\tDatenschutzbeauftragten,\n\t\t\t\t\tHerrn Martin Fuchs, wenden (+49 (0)511 450 670-491; E-Mail:\n\t\t\t\t\t#{layout.mail('fuchs@dzhw.eu','fuchs@dzhw.eu')}).\n\t\t\t\t\tWeitere Informationen zum Datenschutz finden Sie auch\n\t\t\t\t\t#{layout.hyperlink('http://www.dzhw.eu/absolventenstudien/datenschutz-abs2005-3.pdf','hier','_blank')}.</zofar:text>\n            </zofar:header>\n        </zofar:section>\n    </zofar:body>\n    <zofar:triggers>\n        <zofar:variable condition=\"!zofar.isSet(privacy,sessionController.getParticipant())\" onExit=\"false\" value=\"true\" variable=\"privacy\"/>\n    </zofar:triggers>\n    <zofar:transitions>\n        <zofar:transition condition=\"privacy.value\" target=\"page1\"/>\n        <zofar:transition target=\"cancel\"/>\n    </zofar:transitions>\n</zofar:page>"
+    },
+    "additionalQuestionText":{
+        "de":"Dritte Befragung der Hochschulabsolventinnen und Hochschulabsolventen des Jahrgangs 2004/2005,Sehr geehrte Absolventin, sehr geehrter Absolvent, wir freuen uns, dass Sie an der dritten Befragung des Absolventenjahrgangs 2004/2005 teilnehmen. Der Fragebogen gliedert sich in verschiedene thematische Abschnitte zu Ihrem Werdegang nach Ihrem Studium. Bitte beantworten Sie nach Möglichkeit jede Frage. Ihre Antwort geben Sie durch Auswählen des jeweiligen Kästchens. Bei Besonderheiten zur Beantwortung einer Frage oder mehreren möglichen Antworten werden Sie jeweils darauf hingewiesen. Die Beantwortung des Fragebogens nimmt je nach persönlicher Lebenssituation zwischen 5 und 15 Minuten in Anspruch. Sie können jederzeit im Fragebogen pausieren und die Beantwortung zu einem späteren Zeitpunkt fortsetzen. Einverständnis Selbstverständlich ist Ihre Teilnahme freiwillig. Alle Angaben aus den vorangegangenen und der aktuellen Befragungswelle werden ausschließlich zu Forschungszwecken genutzt. Sie werden anderen Wissenschaftler(inne)n und Studierenden für wissenschaftliche Analysen nur in anonymisierter Form zur Verfügung gestellt. Ihre Kontaktdaten werden nicht an Dritte weitergegeben und nur im Rahmen dieser Untersuchungsreihe verwendet.,Ich willige in die Teilnahme an der Befragung und die beschriebene Verwendung meiner Daten ein.,Sollten Sie Fragen zum Datenschutz haben, können Sie sich an unseren Datenschutzbeauftragten, Herrn Martin Fuchs, wenden (+49 (0)511 450 670-491; E-Mail: ). Weitere Informationen zum Datenschutz finden Sie auch ."
+    },
+    "type":{
+        "de":"Mehrfachnennung",
+        "en":"Multiple Choice"
+    },
+    "questionText":{
+        "de":"  test",
+        "en":"  test"
+    },
+    "dataAcquisitionProjectId":[
+        "gra2005"
+    ],
+    "studyId":[
+        "5,9"
+    ],
+    "annotations":{
+    },
+    "successorNumbers":[
+        "1.1"
+    ]
+}

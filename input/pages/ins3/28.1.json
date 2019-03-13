@@ -1,0 +1,32 @@
+
+{
+    "id":"que-gra2005-ins3-28.1$",
+    "indexInInstrument":39,
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:page uid=\"page28\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:body uid=\"b\">\n        <zofar:questionSingleChoice uid=\"sc1\">\n            <zofar:header>\n                <zofar:question uid=\"q1\">Sehen Sie für sich persönlich\n\t\t\t\t\t\t(weiteren) Bedarf zur Teilnahme an beruflicher Weiterbildung und\n\t\t\t\t\t\tQualifizierung?</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd1\" variable=\"e3wbwunsch\">\n                <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption label=\"Nein, kein Bedarf an Weiterbildung\" uid=\"ao2\" value=\"2\"/>\n            </zofar:responseDomain>\n        </zofar:questionSingleChoice>\n    </zofar:body>\n    <zofar:transitions>\n        <zofar:transition condition=\"e3wbwunsch.value==1\" target=\"page28a\"/>\n        <zofar:transition target=\"page29\"/>\n    </zofar:transitions>\n</zofar:page>"
+    },
+    "additionalQuestionText":{
+        "de":"Sehen Sie für sich persönlich (weiteren) Bedarf zur Teilnahme an beruflicher Weiterbildung und Qualifizierung?,Ja,Nein, kein Bedarf an Weiterbildung"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Sehen Sie für sich persönlich (weiteren) Bedarf zur Teilnahme an beruflicher Weiterbildung und Qualifizierung?"
+    },
+    "dataAcquisitionProjectId":[
+        "gra2005"
+    ],
+    "studyId":[
+        "5,9"
+    ],
+    "annotations":{
+    },
+    "successorNumbers":[
+        "28a.1",
+        "29.1"
+    ]
+}

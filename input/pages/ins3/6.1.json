@@ -1,0 +1,31 @@
+
+{
+    "id":"que-gra2005-ins3-6.1$",
+    "indexInInstrument":7,
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:page uid=\"page6\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:body uid=\"b\">\n        <zofar:section uid=\"s\">\n            <zofar:header>\n                <zofar:title block=\"true\" uid=\"t\">PROMOTION/HABILITATION</zofar:title>\n            </zofar:header>\n        </zofar:section>\n        <zofar:questionSingleChoice uid=\"sc\">\n            <zofar:header>\n                <zofar:question block=\"true\" uid=\"q\">Haben Sie eine\n\t\t\t\t\t\tPromotion begonnen oder abgeschlossen?</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"d3promo\">\n                <zofar:answerOption label=\"Ja, abgeschlossen\" uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption label=\"Ja, aber noch nicht beendet\" uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption label=\"Ja, zurzeit unterbrochen\" uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption label=\"Ja, aber abgebrochen\" uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption label=\"Nein, ist aber geplant\" uid=\"ao5\" value=\"5\"/>\n                <zofar:answerOption label=\"Nein, auch nicht geplant\" uid=\"ao6\" value=\"6\"/>\n            </zofar:responseDomain>\n        </zofar:questionSingleChoice>\n    </zofar:body>\n    <zofar:transitions>\n        <zofar:transition condition=\"d3promo.value==4 or d3promo.value==5 or d3promo.value==6\" target=\"page9\"/>\n        <zofar:transition target=\"page7\"/>\n    </zofar:transitions>\n</zofar:page>"
+    },
+    "additionalQuestionText":{
+        "de":"PROMOTION/HABILITATION,Haben Sie eine Promotion begonnen oder abgeschlossen?,Ja, abgeschlossen,Ja, aber noch nicht beendet,Ja, zurzeit unterbrochen,Ja, aber abgebrochen,Nein, ist aber geplant,Nein, auch nicht geplant"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Haben Sie eine Promotion begonnen oder abgeschlossen?"
+    },
+    "dataAcquisitionProjectId":[
+        "gra2005"
+    ],
+    "studyId":[
+        "5,9"
+    ],
+    "annotations":{
+    },
+    "successorNumbers":[
+        "7.1"
+    ]
+}

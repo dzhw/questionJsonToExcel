@@ -1,0 +1,31 @@
+
+{
+    "id":"que-gra2005-ins3-29.1$",
+    "indexInInstrument":41,
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:page uid=\"page29\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:body uid=\"b\">\n        <zofar:section uid=\"s\">\n            <zofar:header>\n                <zofar:title block=\"true\" uid=\"t\">PARTNERSCHAFT UND FAMILIE</zofar:title>\n            </zofar:header>\n        </zofar:section>\n        <zofar:questionSingleChoice uid=\"sc\">\n            <zofar:header>\n                <zofar:question block=\"true\" uid=\"q\">Sind Sie zurzeit ...</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"k3famstand\">\n                <zofar:answerOption label=\"ohne feste(n) Partner(in)?\" uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption label=\"in fester Partnerschaft?\" uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption label=\"verheiratet?\" uid=\"ao3\" value=\"3\"/>\n            </zofar:responseDomain>\n        </zofar:questionSingleChoice>\n    </zofar:body>\n    <zofar:transitions>\n        <zofar:transition target=\"page30\"/>\n    </zofar:transitions>\n</zofar:page>"
+    },
+    "additionalQuestionText":{
+        "de":"PARTNERSCHAFT UND FAMILIE,Sind Sie zurzeit ...,ohne feste(n) Partner(in)?,in fester Partnerschaft?,verheiratet?"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Sind Sie zurzeit ..."
+    },
+    "dataAcquisitionProjectId":[
+        "gra2005"
+    ],
+    "studyId":[
+        "5,9"
+    ],
+    "annotations":{
+    },
+    "successorNumbers":[
+        "30.1"
+    ]
+}

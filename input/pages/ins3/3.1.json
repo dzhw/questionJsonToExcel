@@ -1,0 +1,36 @@
+
+{
+    "id":"que-gra2005-ins3-3.1$",
+    "indexInInstrument":4,
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:page uid=\"page3\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:body uid=\"b\">\n        <zofar:questionSingleChoice uid=\"sc\">\n            <zofar:header>\n                <zofar:question block=\"true\" uid=\"q1\">Waren Sie nach\n\t\t\t\t\t\tStudienabschluss schon einmal beruflich selbständig?</zofar:question>\n                <zofar:instruction uid=\"int1\">auch gemeint sind\n\t\t\t\t\t\tSelbständigkeiten mit Werkvertrag</zofar:instruction>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd1\" variable=\"f3selbwar\">\n                <zofar:answerOption label=\"Ja, ich bin zurzeit selbständig\" uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption label=\"Ja, ich war früher einmal selbständig\" uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption label=\"Nein\" uid=\"ao3\" value=\"3\"/>\n            </zofar:responseDomain>\n        </zofar:questionSingleChoice>\n        <zofar:section uid=\"sw\" visible=\"navigatorBean.isSame() or flag1.value\">\n            <zofar:header>\n                <zofar:text block=\"true\" uid=\"t\">#{layout.BREAK}#{layout.WARNING_START}Diese Frage ist für die\n\t\t\t\t\t\tWeiterführung im Fragebogen wichtig. Sollten Sie keine Angabe\n\t\t\t\t\t\tmachen, erhalten Sie eventuell Fragen, die möglicherweise nicht\n\t\t\t\t\t\tauf Ihre Situation passen.#{layout.WARNING_END}</zofar:text>\n            </zofar:header>\n            <zofar:body uid=\"bb\">\n                <zofar:multipleChoice uid=\"mc\">\n                    <zofar:header>\n                        <zofar:question uid=\"qm\"/>\n                    </zofar:header>\n                    <zofar:responseDomain uid=\"rd\">\n                        <zofar:answerOption label=\"Ja, ich möchte diese Frage überspringen.\" uid=\"ao1\" variable=\"flag1\"/>\n                    </zofar:responseDomain>\n                </zofar:multipleChoice>\n            </zofar:body>\n        </zofar:section>\n    </zofar:body>\n    <zofar:transitions>\n        <zofar:transition condition=\"f3selbwar.value=='' and !flag1.value\" target=\"page3\"/>\n        <zofar:transition condition=\"f3selbwar.value=='' and flag1.value\" target=\"page4\"/>\n        <zofar:transition condition=\"f3selbwar.value==2 or f3selbwar.value==3\" target=\"page4\"/>\n        <zofar:transition condition=\"f3selbwar.value==1\" target=\"page5\"/>\n    </zofar:transitions>\n</zofar:page>"
+    },
+    "additionalQuestionText":{
+        "de":"Waren Sie nach Studienabschluss schon einmal beruflich selbständig?,auch gemeint sind Selbständigkeiten mit Werkvertrag,Ja, ich bin zurzeit selbständig,Ja, ich war früher einmal selbständig,Nein,Diese Frage ist für die Weiterführung im Fragebogen wichtig. Sollten Sie keine Angabe machen, erhalten Sie eventuell Fragen, die möglicherweise nicht auf Ihre Situation passen.,Ja, ich möchte diese Frage überspringen."
+    },
+    "type":{
+        "de":"Itembatterie",
+        "en":"Item Set"
+    },
+    "questionText":{
+        "de":"Waren Sie nach Studienabschluss schon einmal beruflich selbständig?",
+        "en":""
+    },
+    "instruction":{
+        "de":"auch gemeint sind Selbständigkeiten mit Werkvertrag"
+    },
+    "dataAcquisitionProjectId":[
+        "gra2005"
+    ],
+    "studyId":[
+        "5,9"
+    ],
+    "annotations":{
+    },
+    "successorNumbers":[
+        "4.1",
+        "5.1"
+    ]
+}
